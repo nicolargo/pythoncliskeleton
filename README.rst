@@ -8,13 +8,14 @@ How to use it ?
 
 Clone it:
 
-.. code-block:: console
+.. code-block:: bash
+
     git clone git@github.com:nicolargo/pythoncliskeleton.git
 
 Rename it to your *foo* project...
 
+.. code-block:: bash
 
-.. code-block:: console
     mv pythoncliskeleton foo
     cd foo
     rm -rf .git
@@ -28,7 +29,8 @@ Your skeleton is ready to be used !
 
 Test it !
 
-.. code-block:: console
+.. code-block:: bash
+
     python -m foo
     python -m foo -h
 
