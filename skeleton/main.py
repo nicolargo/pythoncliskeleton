@@ -10,9 +10,14 @@
 import argparse
 import logging
 import sys
-from skeleton import __appname__, __version__
 
 # Global variables
+__appname__ = "Skeleton"
+__version__ = "0.1"
+__author__ = "Nicolas Hennion <nicolas@nicolargo.com>"
+__licence__ = "MIT"
+
+# Configure logger
 logging.basicConfig(format='%(asctime)-15s %(message)s')
 logger = logging.getLogger(__appname__)
 
@@ -54,6 +59,7 @@ Examples of use: ...
         if args.debug:
             from logging import DEBUG
             logger.setLevel(DEBUG)
+            logger.debug("Debug mode is ON")
         else:
             from warnings import simplefilter
             simplefilter("ignore")

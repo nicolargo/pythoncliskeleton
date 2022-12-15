@@ -9,11 +9,6 @@
 # Import system libs
 import signal
 
-__appname__ = "Skeleton"
-__version__ = "0.1"
-__author__ = "Nicolas Hennion <nicolas@nicolargo.com>"
-__licence__ = "MIT"
-
 # Import others libs
 from skeleton.main import SkeletonMain
 from skeleton.logger import logger
