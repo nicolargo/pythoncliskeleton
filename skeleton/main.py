@@ -8,9 +8,14 @@
 
 # Import libs
 import argparse
+import logging
 import sys
 from skeleton import __appname__, __version__
-from skeleton.logger import logger
+
+# Global variables
+logging.basicConfig(format='%(asctime)-15s %(message)s')
+logger = logging.getLogger(__appname__)
+
 
 class SkeletonMain(object):
     """Main class to manage instance."""
